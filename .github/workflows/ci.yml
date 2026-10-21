@@ -33,5 +33,5 @@ jobs:
       #     cmake --build build
       #     ctest --test-dir build --output-on-failure
 
-      - name: [Placeholder]
+      - name: Placeholder
         run: echo "Replace this step with your build and test commands."
