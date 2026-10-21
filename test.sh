@@ -1,1 +1,1 @@
-echo "hello"
+printf '\033[33mhello\033[0m\n'
