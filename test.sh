@@ -1,1 +1,1 @@
-printf '\033[33mhello\033[0m\n'
+printf '\033[33mPre-commit test\033[0m\n'
