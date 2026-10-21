@@ -1,21 +1,149 @@
-# Python
+############################# 1. Operating System Files #############################
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+## Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Linux
+*~
+.directory
+
+################################ 2. IDEs and Editors ################################
+## Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+## JetBrains IDEs
+.idea/
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Vim
+[._]*.sw?
+Session.vim
+
+## Emacs
+*~
+\#*\#
+.\#*
+
+############################# 3. Logs and Runtime Files #############################
+*.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+*.pid
+*.pid.lock
+*.seed
+*.stackdump
+
+####################### 4. Environment Variables and Secrets ########################
+.env
+.env.*
+!.env.example
+!.env.sample
+
+## Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+
+## Credentials and local configuration
+credentials.json
+secrets.json
+secrets/
+private/
+## Uncomment if your project uses local configuration files:
+# config.local.*
+# settings.local.*
+
+########################## 5. Temporary Files and Backups ###########################
+*.tmp
+*.temp
+temp.*
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swp
+*.swo
+
+################################## 6. Cache Files ###################################
+.cache/
+cache/
+tmp/
+temp/
 __pycache__/
 *.py[cod]
-*.pyd
-.Python
-.venv/
-venv/
-env/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
+*$py.class
+
+
+########################## 7. Databases and Local Storage ###########################
+## SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+## Local database directories
+## Uncomment if applicable:
+# db-data/
+# postgres-data/
+
+########################## 8. Local Project Configuration ###########################
+## Uncomment if these files are machine-specific:
+# local.json
+# local.yaml
+# local.yml
+# *.local
+
+## OS-generated metadata
+.Trashes
+.fseventsd
+.Spotlight-V100
+
+########################### 9. Archives and Large Files ############################
+## Uncomment if downloaded archives should not be committed:
+# *.zip
+# *.tar
+# *.tar.gz
+# *.7z
+
+## Uncomment if large media files are generated locally:
+# *.mp4
+# *.mov
+# *.wav
+# *.mp3
+
+############################ 10. Language-Specific Files ############################
+### Common build directories
 build/
 dist/
-*.egg-info/
+out/
+release/
+debug/
 
-# C and C++ build artifacts
+### C / C++
 *.o
 *.obj
 *.a
@@ -25,23 +153,132 @@ dist/
 *.dll
 *.exe
 *.out
-*.gch
+*.class
 *.pch
-*.d
+*.gch
+
+## CMake generated files
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
+Makefile.generated
 compile_commands.json
-Makefile
 
-# Temporary files and logs
-temp/
-tmp/
-*.tmp
-*.temp
-*.bak
-*.swp
-*.swo
-*~
-*.log
-logs/
+## Uncomment if generated Makefiles should be ignored:
+# Makefile
+
+### Python
+## Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+## Packaging
+*.egg
+*.egg-info/
+wheels/
+pip-wheel-metadata/
+
+## Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+
+## Jupyter
+.ipynb_checkpoints/
+
+## Uncomment if notebook outputs should not be committed:
+# *.ipynb
+
+### JavaScript / TypeScript / Node.js
+node_modules/
+.npm/
+.pnpm-store/
+.next/
+.nuxt/
+.svelte-kit/
+.angular/
+.parcel-cache/
+.turbo/
+coverage/
+
+## Generated framework output
+## Uncomment when applicable:
+# .output/
+# .vercel/
+# .netlify/
+
+## Package manager debug files
+.npm-debug.log*
+
+### Java / JVM
+target/
+.gradle/
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+### Go
+## Binary produced by a typical Go build
+## Uncomment if your binary has this name:
+# app
+
+## Go test binaries and profiles
+*.test
+*.prof
+
+### Rust
+## Cargo build output
+## Uncomment if you want to ignore Rust build artifacts:
+# target/
+
+############################ 11. Ai Stack Specific Files #############################
+# Model checkpoints and weights
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.keras
+*.safetensors
+*.pb
+*.tflite
+*.engine
+
+# Experiment tracking
+mlruns/
+wandb/
+lightning_logs/
+tensorboard/
+runs/
+
+# Model caches
+.cache/huggingface/
+.cache/torch/
+.cache/ultralytics/
+
+# Uncomment if datasets should remain local:
+# data/
+# datasets/
+# *.csv
+# *.parquet
+# *.feather
+
+# Uncomment if generated predictions should be ignored:
+# predictions/
+# outputs/
+
+# Common serialized objects
+# Uncomment if these are generated artifacts:
+# *.pkl
+# *.pickle
+# *.joblib
